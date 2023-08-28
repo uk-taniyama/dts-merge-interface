@@ -1,7 +1,7 @@
 {
   "name": "dts-merge-interface",
   "description": "Merge the interfaces written in .d.ts.",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uk-taniyama/dts-merge-interface.git"
@@ -39,9 +39,9 @@
     "lint": "eslint .eslintrc.cjs jest.config.cjs rollup.config.mjs src",
     "lint-fix": "npm run lint -- --fix"
   },
-  "peerDependencies": {
-    "rollup": "^3.0.0",
-    "typescript": "^4.0.0"
+  "dependencies": {
+    "rollup": ">=3.0.0",
+    "typescript": ">=4.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
