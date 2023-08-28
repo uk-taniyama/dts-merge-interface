@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import resolve from '@rollup/plugin-node-resolve';
-import dtsMergeInterface from 'dts-merge-interface/rollup-plugin';
+import { dtsMergeInterface } from 'dts-merge-interface/rollup-plugin';
 import { dts } from 'rollup-plugin-dts';
 import esbuild from 'rollup-plugin-esbuild';
 import { visualizer } from 'rollup-plugin-visualizer';
