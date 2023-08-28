@@ -20,7 +20,7 @@ module.exports = {
   ignorePatterns: ['test-data/**', 'example/**'],
   settings: {
     'import/resolver': {
-      typescript: {},
+      typescript: true,
     },
   },
   rules: {
