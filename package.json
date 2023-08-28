@@ -1,7 +1,7 @@
 {
   "name": "dts-merge-interface",
   "description": "Merge the interfaces written in .d.ts.",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uk-taniyama/dts-merge-interface.git"
@@ -12,6 +12,9 @@
     "url": "https://github.com/uk-taniyama/dts-merge-interface/issues"
   },
   "homepage": "https://github.com/uk-taniyama/dts-merge-interface#readme",
+  "bin": {
+    "dts-merge-interface": "./bin/cli.cjs"
+  },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -28,7 +31,8 @@
     }
   },
   "files": [
-    "dist/*"
+    "dist/*",
+    "bin/cli.cjs"
   ],
   "scripts": {
     "prebuild": "rimraf dist log",
