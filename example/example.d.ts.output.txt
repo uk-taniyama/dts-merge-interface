@@ -1,0 +1,6 @@
+interface Interface {
+    foo: () => void;
+    bar: () => void;
+}
+declare function example(): void;
+export { type Interface, example as default };

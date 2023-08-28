@@ -1,0 +1,18 @@
+declare module '.' {
+    interface Interface {
+        foo: () => void;
+    }
+}
+
+declare module '.' {
+    interface Interface {
+        bar: () => void;
+    }
+}
+
+interface Interface {
+}
+
+declare function example(): void;
+
+export { type Interface, example as default };

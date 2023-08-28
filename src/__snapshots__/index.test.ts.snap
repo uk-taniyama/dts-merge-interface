@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index transform: input 1`] = `
+"declare module '.' {
+    interface Xxx {
+        children(): Xxx;
+    }
+}
+
+declare const from: (name: string) => Xxx;
+declare module '.' {
+    interface Xxx {
+        findTag(name: string): Xxx;
+        findClass(name: string): Xxx;
+    }
+}
+
+interface Yyy {
+    foo(xxx: Xxx): number;
+    bar(xxx: Xxx): number;
+}
+declare module '.' {
+    interface Xxx {
+        eq(index: number): Xxx;
+    }
+}
+
+interface Xxx {
+}
+
+export { type Xxx, type Yyy, from };
+"
+`;
+
+exports[`index transform: output 1`] = `
+"interface Xxx {
+    children(): Xxx;
+    findTag(name: string): Xxx;
+    findClass(name: string): Xxx;
+    eq(index: number): Xxx;
+}
+interface Yyy {
+    foo(xxx: Xxx): number;
+    bar(xxx: Xxx): number;
+}
+declare const from: (name: string) => Xxx;
+export { type Xxx, type Yyy, from };
+"
+`;
