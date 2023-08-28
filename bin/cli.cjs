@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { readFileSync, writeFileSync } = require('fs');
 
 const { transformString } = require('../dist/index.cjs');
