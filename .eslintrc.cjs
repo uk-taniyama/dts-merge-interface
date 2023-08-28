@@ -18,6 +18,11 @@ module.exports = {
     'unused-imports',
   ],
   ignorePatterns: ['test-data/**', 'example/**'],
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   rules: {
     // 'linebreak-style': 'off',
     'max-len': [

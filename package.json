@@ -1,7 +1,7 @@
 {
   "name": "dts-merge-interface",
   "description": "Merge the interfaces written in .d.ts.",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uk-taniyama/dts-merge-interface.git"
@@ -56,6 +56,7 @@
     "eslint": "^8.48.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-import-resolver-typescript": "^3.6.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
