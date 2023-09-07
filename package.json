@@ -1,7 +1,7 @@
 {
   "name": "dts-merge-interface",
   "description": "Merge the interfaces written in .d.ts.",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uk-taniyama/dts-merge-interface.git"
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/uk-taniyama/dts-merge-interface/issues"
   },
-  "homepage": "https://github.com/uk-taniyama/dts-merge-interface#readme",
+  "homepage": "https://uk-taniyama.github.io/dts-merge-interface/",
   "bin": {
     "dts-merge-interface": "./bin/cli.cjs"
   },
