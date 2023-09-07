@@ -1,4 +1,7 @@
-import type { OutputChunk, PluginImpl } from 'rollup';
+/**
+ * @module dts-merge-import/rollup-plugin
+ */
+import type { OutputChunk, Plugin } from 'rollup';
 
 import { transformString } from 'dts-merge-interface';
 
@@ -6,7 +9,7 @@ function isChunk(val: unknown): val is OutputChunk {
   return (val as any)?.type === 'chunk';
 }
 
-export const dtsMergeInterface: PluginImpl = () => {
+export function dtsMergeInterface(): Plugin {
   return {
     name: 'dts-merge-interface',
     generateBundle(options, bundle) {
@@ -18,6 +21,6 @@ export const dtsMergeInterface: PluginImpl = () => {
       });
     },
   };
-};
+}
 
 export default dtsMergeInterface;

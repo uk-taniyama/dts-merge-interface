@@ -1,3 +1,6 @@
+/**
+ * @module dts-merge-import
+ */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import ts from 'typescript';
 

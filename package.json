@@ -37,6 +37,7 @@
   "scripts": {
     "prebuild": "rimraf dist log",
     "build": "rollup -c",
+    "doc": "typedoc",
     "test": "jest",
     "test-watch": "jest --watch src",
     "test-coverage": "jest --coverage",
@@ -74,6 +75,7 @@
     "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-visualizer": "^5.9.2",
     "ts-node": "^10.9.1",
+    "typedoc": "^0.25.0",
     "typescript": "^5.0.4"
   }
 }

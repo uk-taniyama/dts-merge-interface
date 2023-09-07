@@ -1,0 +1,7 @@
+{
+  "entryPoints": [
+    "src/index.ts",
+    "src/rollup-plugin/index.ts"
+  ],
+  "out": "docs"
+}
